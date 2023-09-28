@@ -29,6 +29,7 @@ import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 import Main from "./Main";
+import Cajita from "./Cajita";
 
 const drawerWidth = 240;
 
@@ -109,7 +110,7 @@ const Listas = () => {
     setOpen(false);
   };
   return (
-    <Box sx={{ display: "flex",position:'absolute' }}>
+    <Box sx={{ display: "flex", position: "absolute" }}>
       <CssBaseline />
       <AppBar position="fixed" open={open}>
         <Toolbar>
@@ -192,8 +193,9 @@ const Listas = () => {
         </List>
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-      <DrawerHeader />
-      <Main/>
+        <DrawerHeader />
+        <Main />
+        <Cajita />
       </Box>
     </Box>
   );
