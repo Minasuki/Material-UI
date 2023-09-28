@@ -5,7 +5,7 @@ const style = {
   flexDirection: "column",
 };
 
-const Cajita = () => {
+const CajitaFlex = () => {
   return (
     <Box>
       <Box sx={{ mx: 1, my: 2, width: 1 / 2 }}>Hola como estas?</Box>
@@ -21,4 +21,4 @@ const Cajita = () => {
   );
 };
 
-export default Cajita;
+export default CajitaFlex;

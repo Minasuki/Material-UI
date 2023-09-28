@@ -29,7 +29,8 @@ import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 import Main from "./Main";
-import Cajita from "./Cajita";
+import CajitaFlex from "./CajitaFlex";
+import CajitaGrid from "./CajitaGrid";
 
 const drawerWidth = 240;
 
@@ -193,9 +194,14 @@ const Listas = () => {
         </List>
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+        {/* Aqui se llaman a las otras clases para ser mostradas */}
+
         <DrawerHeader />
         <Main />
-        <Cajita />
+        <CajitaFlex />
+        <CajitaGrid />
+
+        {/* /////////////////////////////////////////////////////////////////////////////////// */}
       </Box>
     </Box>
   );
