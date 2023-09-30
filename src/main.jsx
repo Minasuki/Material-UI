@@ -1,12 +1,19 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import { CssBaseline } from '@mui/material'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+import { CssBaseline } from "@mui/material";
+import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "@mui/material";
+import Theme from "./components/Theme/Theme";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <CssBaseline />
-    <App />
-  </React.StrictMode>,
-)
+    <ThemeProvider theme={Theme}>
+      <BrowserRouter>
+        <CssBaseline />
+        <App />
+      </BrowserRouter>
+    </ThemeProvider>
+  </React.StrictMode>
+);

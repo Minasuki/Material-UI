@@ -1,6 +1,6 @@
 import { Box, Button, Typography } from "@mui/material";
 
-const Main = () => {
+const Contenido = () => {
   return (
     <Box>
       <Typography variant="h1" color="initial">
@@ -29,4 +29,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Contenido;
