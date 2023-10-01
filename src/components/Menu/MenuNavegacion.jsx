@@ -13,7 +13,12 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, /*Route, Routes*/ } from "react-router-dom";
+// import BluuCard from '../pages/BluuCard'
+// import CajitaFlex from '../pages/CajitaFlex'
+// import CajitaGrid from '../pages/CajitaGrid'
+// import Contenido from '../pages/Contenido'
+// import Productos from '../pages/Productos'
 
 const drawerWidth = 240;
 const navItems = [
@@ -21,6 +26,7 @@ const navItems = [
   "/Material-UI/CajitaFlex",
   "/Material-UI/CajitaGrid",
   "/Material-UI/Productos",
+  "/Material-UI/ValidarFormulario",
 ];
 
 function MenuNavegacion(props) {
@@ -34,17 +40,31 @@ function MenuNavegacion(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+        <Link
+          to="Material-UI/"
+          style={{ textDecoration: "none", color: "Black" }}
+        >
+          MUI
+        </Link>
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+        {navItems.map((item) => {
+          const segments = item.split("/");
+          const lastSegment = segments[segments.length - 1];
+          return (
+            <ListItem key={item} disablePadding>
+              <ListItemButton sx={{ textAlign: "center" }}>
+                <Link
+                  to={item}
+                  style={{ textDecoration: "none", color: "Black" }}
+                >
+                  <ListItemText primary={lastSegment} />
+                </Link>
+              </ListItemButton>
+            </ListItem>
+          );
+        })}
       </List>
     </Box>
   );
@@ -70,7 +90,12 @@ function MenuNavegacion(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            MUI
+            <Link
+              to="Material-UI/"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              MUI
+            </Link>
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => {
@@ -107,6 +132,13 @@ function MenuNavegacion(props) {
           {drawer}
         </Drawer>
       </nav>
+      {/* <Routes>
+        <Route path="/Material-UI" element={<Contenido />}/>
+        <Route path="/Material-UI/BluuCard" element={<BluuCard />} />
+        <Route path="/Material-UI/CajitaFlex" element={<CajitaFlex />} />
+        <Route path="/Material-UI/CajitaGrid" element={<CajitaGrid />} />
+        <Route path="/Material-UI/Productos" element={<Productos />} />
+      </Routes> */}
     </Box>
   );
 }
