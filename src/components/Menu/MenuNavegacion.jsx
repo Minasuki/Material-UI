@@ -28,6 +28,7 @@ const navItems = [
   "/Material-UI/Productos",
   "/Material-UI/ValidarFormulario",
   "/Material-UI/Practica",
+  "/Material-UI/FireBaseCRUD",
 ];
 
 function MenuNavegacion(props) {
