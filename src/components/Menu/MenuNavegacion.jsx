@@ -13,12 +13,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import { Link, Outlet, /*Route, Routes*/ } from "react-router-dom";
-// import BluuCard from '../pages/BluuCard'
-// import CajitaFlex from '../pages/CajitaFlex'
-// import CajitaGrid from '../pages/CajitaGrid'
-// import Contenido from '../pages/Contenido'
-// import Productos from '../pages/Productos'
+import { Link, Outlet } from "react-router-dom";
 
 const drawerWidth = 240;
 const navItems = [

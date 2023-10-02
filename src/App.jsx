@@ -9,7 +9,7 @@ import CajitaGrid from "./components/pages/CajitaGrid";
 import Container from '@mui/material/Container'
 import ValidarFrom from "./components/pages/ValidarFrom";
 import Practica from "./components/pages/Practica";
-import FireBaseCRUD from "./components/pages/FireBaseCRUD";
+import FireBaseCRUD from "./components/pages/Crud/FireBaseCRUD";
 
 function App() {
   return (
