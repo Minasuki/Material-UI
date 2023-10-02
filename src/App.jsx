@@ -8,6 +8,7 @@ import CajitaFlex from "./components/pages/CajitaFlex";
 import CajitaGrid from "./components/pages/CajitaGrid";
 import Container from '@mui/material/Container'
 import ValidarFrom from "./components/pages/ValidarFrom";
+import Practica from "./components/pages/Practica";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/Material-UI/CajitaGrid" element={<CajitaGrid />} />
         <Route path="/Material-UI/Productos" element={<Productos />} />
         <Route path="/Material-UI/ValidarFormulario" element={<ValidarFrom />} />
+        <Route path="/Material-UI/Practica" element={<Practica />} />
       </Routes>
       </Container>
     </>

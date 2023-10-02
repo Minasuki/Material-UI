@@ -27,6 +27,7 @@ const navItems = [
   "/Material-UI/CajitaGrid",
   "/Material-UI/Productos",
   "/Material-UI/ValidarFormulario",
+  "/Material-UI/Practica",
 ];
 
 function MenuNavegacion(props) {
