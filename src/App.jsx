@@ -9,7 +9,7 @@ import CajitaGrid from "./components/pages/CajitaGrid";
 import Container from '@mui/material/Container'
 import ValidarFrom from "./components/pages/ValidarFrom";
 import Practica from "./components/pages/Practica";
-import FireBaseCRUD from "./components/pages/Crud/FireBaseCRUD";
+import FireBase from "./components/pages/Crud/FireBase";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
         <Route path="/Material-UI/Productos" element={<Productos />} />
         <Route path="/Material-UI/ValidarFormulario" element={<ValidarFrom />} />
         <Route path="/Material-UI/Practica" element={<Practica />} />
-        <Route path="/Material-UI/FireBaseCRUD" element={<FireBaseCRUD />} />
+        <Route path="/Material-UI/FireBase" element={<FireBase />} />
       </Routes>
       </Container>
     </>

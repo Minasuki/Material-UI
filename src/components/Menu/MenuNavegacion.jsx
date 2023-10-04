@@ -23,7 +23,7 @@ const navItems = [
   "/Material-UI/Productos",
   "/Material-UI/ValidarFormulario",
   "/Material-UI/Practica",
-  "/Material-UI/FireBaseCRUD",
+  "/Material-UI/FireBase",
 ];
 
 function MenuNavegacion(props) {
@@ -129,22 +129,11 @@ function MenuNavegacion(props) {
           {drawer}
         </Drawer>
       </nav>
-      {/* <Routes>
-        <Route path="/Material-UI" element={<Contenido />}/>
-        <Route path="/Material-UI/BluuCard" element={<BluuCard />} />
-        <Route path="/Material-UI/CajitaFlex" element={<CajitaFlex />} />
-        <Route path="/Material-UI/CajitaGrid" element={<CajitaGrid />} />
-        <Route path="/Material-UI/Productos" element={<Productos />} />
-      </Routes> */}
     </Box>
   );
 }
 
 MenuNavegacion.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
   window: PropTypes.func,
 };
 
