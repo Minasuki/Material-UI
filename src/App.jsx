@@ -10,6 +10,7 @@ import Container from '@mui/material/Container'
 import ValidarFrom from "./components/pages/ValidarFrom";
 import Practica from "./components/pages/Practica";
 import FireBase from "./components/pages/Crud/FireBase";
+import Add from "./components/pages/Crud/Add";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/Material-UI/ValidarFormulario" element={<ValidarFrom />} />
         <Route path="/Material-UI/Practica" element={<Practica />} />
         <Route path="/Material-UI/FireBase" element={<FireBase />} />
+        <Route path="/Material-UI/FireBase/Add" element={<Add />} />
       </Routes>
       </Container>
     </>

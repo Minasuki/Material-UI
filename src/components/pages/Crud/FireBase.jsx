@@ -3,7 +3,9 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { database } from "./config/fb";
 import { collection, getDocs } from "firebase/firestore";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import Button from '@mui/material/Button'
+import { Box } from "@mui/material";
 
 const FireBase = () => {
   const [productos, setProductos] = useState([]);
@@ -26,7 +28,13 @@ const FireBase = () => {
   return (
     <>
       <Typography variant="h6">Fire Base</Typography>
-     
+<Box>
+    <Link to='/Material-UI/FireBase/Add'>
+     <Button variant="contained" color="primary">
+       Add
+      </Button>
+    </Link>
+</Box>
     </>
   );
 };
